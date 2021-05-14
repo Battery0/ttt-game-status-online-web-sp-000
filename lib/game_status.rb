@@ -59,7 +59,7 @@ def over?(board)
 end
 
 
-#Checks to see which player: "X" or "O" is the winner and return that letter. If the #won? method returns a value (the winning combination array) we take the board array and use the winning combination to see which character "X" or "O" has won.
+#Checks to see which player: "X" or "O" is the winner and return that letter. If the #won? method returns a value (the winning combination array) we take the board array and use the winning combination as indicies to see which character "X" or "O" has won.
 def winner(board)
   if won?(board) != nil
     board[won?(board)[0]]
